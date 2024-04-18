@@ -1,10 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-
-    const navigate = useNavigate();
-    
     return (
         <div className="flex justify-center items-center h-screen bg-pink-500">
             <div className="bg-white p-8 rounded shadow">
@@ -19,13 +15,6 @@ const Login = () => {
                         <input type="password" id="password" className="w-full px-3 py-2 border border-gray-300 rounded" />
                     </div>
                     <button type="submit" className="w-full bg-pink-600 text-white py-2 px-4 rounded font-bold">Login</button>
-                    <button 
-                        type="submit" 
-                        className="w-full bg-pink-600 text-white py-2 px-4 rounded font-bold mt-4"
-                        onClick={() => { navigate('/register') }}
-                    >
-                        Register
-                    </button>
                 </form>
             </div>
         </div>
